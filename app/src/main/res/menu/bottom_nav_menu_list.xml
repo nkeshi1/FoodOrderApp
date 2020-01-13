@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/food_items"
+        android:title="Food"
+        android:icon="@drawable/ic_local_food_store_black_24dp"/>
+
+    <item android:id="@+id/drinks_items"
+        android:title="Drinks"
+        android:icon="@drawable/ic_local_drink_black_24dp"/>
+
+    <item android:id="@+id/dessert_items"
+        android:icon="@drawable/ic_mic_none_black_24dp"
+        android:title="Dessert"/>
+
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/total_order_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:divider="@color/iconsUnselectedColor"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkoutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/food_summary_on_plate" />
+
+    <Button
+        android:id="@+id/checkoutBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:gravity="start|center_horizontal|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="proceed to checkout"
+        android:textColor="@color/textSec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalCartCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/toolbarColor"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutBtn"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutBtn"
+        app:layout_constraintTop_toTopOf="@+id/checkoutBtn" />
+</android.support.constraint.ConstraintLayout>

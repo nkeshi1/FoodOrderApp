@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".signup">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/firstnameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="@color/iconsSelectedColor"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:paddingLeft="15dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user_img" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Create an account"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView11"
+            app:layout_constraintStart_toStartOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lastnameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="@color/iconsSelectedColor"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/firstnameText"
+            app:layout_constraintTop_toTopOf="@+id/firstnameText">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.49878347" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="@color/iconsSelectedColor"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstnameText">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail address "
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_background"
+            android:text="sign up"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/retypePasswordText" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="@color/iconsSelectedColor"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/emailText"
+            app:layout_constraintStart_toStartOf="@+id/emailText"
+            app:layout_constraintTop_toBottomOf="@+id/emailText">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="@color/iconsSelectedColor"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/usernameText"
+            app:layout_constraintStart_toStartOf="@+id/usernameText"
+            app:layout_constraintTop_toBottomOf="@+id/usernameText">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textVisiblePassword|textPassword"
+                android:paddingLeft="10dp"
+                android:password="true"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/retypePasswordText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/passwordText"
+            app:layout_constraintStart_toStartOf="@+id/passwordText"
+            app:layout_constraintTop_toBottomOf="@+id/passwordText">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Re-type password"
+                android:inputType="textVisiblePassword|textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

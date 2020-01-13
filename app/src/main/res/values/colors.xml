@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C8016255</color>
+    <color name="colorPrimaryDark">#B90F0F0F</color>
+    <color name="colorAccent">#D88C1B</color>
+    <color name="backgroundColorStart">#253552</color>
+    <color name="backgroundColorCenter">#245756</color>
+    <color name="backgroundColorEnd">#F56F05F0</color>
+    <color name="deliveryType">#5C817B78</color>
+    <color name="iconsSelectedColor">#BA3C3CFF</color>
+    <color name="iconsUnselectedColor">#9F6F6A6A</color>
+    <color name="toolbarTitleColor">#CE000000</color>
+    <color name="textSec">#F5FFFFFF</color>
+    <color name="accent">#795548</color>
+    <color name="frameBackgroundColor">#C8040404</color>
+    <color name="toolbarColor">#FFFFFF</color>
+    <color name="aquaColor">#00FFFF</color>
+    <color name="orangeColor">#FB8122</color>
+</resources>
